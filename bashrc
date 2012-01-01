@@ -5,10 +5,6 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-# Workaround for "Unable to register window with path" bug in Ubuntu
-# https://bugs.launchpad.net/dbusmenu/+bug/733265/comments/13
-gvim(){ /usr/bin/gvim -f "$@" & true;disown; }
-
 # don't put duplicate lines in the history. See bash(1) for more options
 # ... or force ignoredups and ignorespace
 HISTCONTROL=ignoredups:ignorespace
