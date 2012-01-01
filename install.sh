@@ -1,8 +1,10 @@
-ln -s vimrc ~/.vimrc
-ln -s bashrc ~/.bashrc
-ln -s bash_aliases ~/.bash_aliases
+# Run from the same directory as the script
+
+ln -s $PWD/vimrc ~/.vimrc
+ln -s $PWD/bashrc ~/.bashrc
+ln -s $PWD/bash_aliases ~/.bash_aliases
 if [ ! -L ~/.vim ]; then
-    ln -s vim/ ~/.vim
+    ln -s $PWD/vim/ ~/.vim
 fi
 
 mkdir -p vim/autoload

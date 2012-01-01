@@ -1,8 +1,6 @@
 call pathogen#infect()
 call pathogen#helptags()
 
-" au BufNewFile,BufRead .bash_aliases call SetFileTypeSH("bash")
-
 colorscheme desert
 
 set ruler	" show the cursor position all the time
