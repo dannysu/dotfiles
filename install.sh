@@ -10,19 +10,46 @@ fi
 mkdir -p vim/autoload
 mkdir -p vim/bundle
 
-# grab latest pathogen
+# install latest pathogen
 wget -O vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim
 
-pushd vim/bundle
+function install_vim_plugin {
+    if [ ! -d "$1" ]; then
+        git clone "$2"
+    fi
+    pushd "$1" 1>/dev/null
+    git pull
+    popd 1>/dev/null
+}
 
-# grab vim-indent-guides plugin
-git clone git://github.com/nathanaelkane/vim-indent-guides.git
+pushd vim/bundle 1>/dev/null
 
-# grab command-t plugin and compile the C extension
-git clone git://git.wincent.com/command-t.git
-pushd command-t/ruby/command-t
+# install vim-indent-guides plugin
+install_vim_plugin vim-indent-guides git://github.com/nathanaelkane/vim-indent-guides.git
+
+# install command-t plugin and compile the C extension
+install_vim_plugin command-t git://git.wincent.com/command-t.git
+pushd command-t/ruby/command-t 1>/dev/null
 ruby extconf.rb
 make
-popd
+popd 1>/dev/null
 
-popd
+# install lusty-explorer and lusty-juggler
+install_vim_plugin lusty git://github.com/sjbach/lusty.git
+
+# install fugitive for git
+install_vim_plugin vim-fugitive git://github.com/tpope/vim-fugitive.git
+
+# install NERDtree plugin
+install_vim_plugin nerdtree git://github.com/scrooloose/nerdtree.git
+
+# install Gundo plugin
+install_vim_plugin gundo.vim git://github.com/sjl/gundo.vim.git
+
+# install syntastic plugin
+install_vim_plugin syntastic git://github.com/scrooloose/syntastic.git
+
+# install tagbar
+install_vim_plugin tagbar git://github.com/majutsushi/tagbar.git
+
+popd 1>/dev/null
