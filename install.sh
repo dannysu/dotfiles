@@ -1,17 +1,17 @@
-ln -s ~/.dotfiles/vimrc ~/.vimrc
-ln -s ~/.dotfiles/bashrc ~/.bashrc
-ln -s ~/.dotfiles/bash_aliases ~/.bash_aliases
+ln -s vimrc ~/.vimrc
+ln -s bashrc ~/.bashrc
+ln -s bash_aliases ~/.bash_aliases
 if [ ! -L ~/.vim ]; then
-    ln -s ~/.dotfiles/vim/ ~/.vim
+    ln -s vim/ ~/.vim
 fi
 
-mkdir -p ~/.dotfiles/vim/autoload
-mkdir -p ~/.dotfiles/vim/bundle
+mkdir -p vim/autoload
+mkdir -p vim/bundle
 
 # grab latest pathogen
-wget -O ~/.dotfiles/vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim
+wget -O vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim
 
-pushd ~/.dotfiles/vim/bundle
+pushd vim/bundle
 
 # grab vim-indent-guides plugin
 git clone git://github.com/nathanaelkane/vim-indent-guides.git
