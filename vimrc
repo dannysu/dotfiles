@@ -9,12 +9,14 @@ set showmatch	" cursor shows matching ) and }
 set showmode	" show current mode
 set ignorecase	" ignore case when searching
 set smartcase	" overwrite ignorecase option if uppercase used in search
+set nowrap	" disable automatic line wrapping
 
 filetype indent plugin on " enable all filetype related detections
 
 syntax on " enable syntax highlighting
 
-set clipboard=unnamedplus " yank to the clipboard (register "+) by default
+set clipboard=unnamedplus	" yank to the clipboard (register "+) by default
+set laststatus=2		" always have status line
 
 " tab navigation like firefox
 nmap <C-S-tab> :tabprevious<cr>
