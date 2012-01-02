@@ -1,5 +1,8 @@
 let mapleader="," " Use comma instead of \ for <Leader>
 
+let CommandTMaxCachedDirectories=0
+let CommandTSavedCacheDirectory="~/.vim/command-t-cache"
+
 call pathogen#infect()
 call pathogen#helptags()
 
@@ -13,12 +16,13 @@ set showmode	" show current mode
 set ignorecase	" ignore case when searching
 set smartcase	" overwrite ignorecase option if uppercase used in search
 set nowrap	" disable automatic line wrapping
+set incsearch	" highlights as you type search string
 
 filetype indent plugin on " enable all filetype related detections
 
 syntax on " enable syntax highlighting
 
-set laststatus=2		" always have status line
+set laststatus=2	" always have status line
 
 " tab navigation like firefox
 nmap <C-S-tab> :tabprevious<cr>
@@ -31,7 +35,10 @@ nmap <C-t> :tabnew<cr>
 imap <C-t> <ESC>:tabnew<cr>
 
 " NERDTree keyboard shortcuts
-map <Leader>n :NERDTreeToggle<cr>
+map <Leader>nt :NERDTreeToggle<cr>
 
 " toggle Gundo
-map <Leader>u :GundoToggle<cr>
+map <Leader>gu :GundoToggle<cr>
+
+" Tagbar shortcuts
+map <Leader>rt :TagbarToggle<cr>
