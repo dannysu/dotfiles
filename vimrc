@@ -1,7 +1,6 @@
 let mapleader="," " Use comma instead of \ for <Leader>
 
 let CommandTMaxCachedDirectories=0
-let CommandTSavedCacheDirectory="~/.vim/command-t-cache"
 
 call pathogen#infect()
 call pathogen#helptags()
