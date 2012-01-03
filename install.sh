@@ -29,8 +29,8 @@ install_vim_plugin vim-indent-guides git://github.com/nathanaelkane/vim-indent-g
 
 # install command-t plugin and compile the C extension
 #install_vim_plugin command-t git://git.wincent.com/command-t.git
-install_vim_plugin command-t git://github.com/dannysu/Command-T.git
-pushd command-t/ruby/command-t 1>/dev/null
+install_vim_plugin Command-T git://github.com/dannysu/Command-T.git
+pushd Command-T/ruby/command-t 1>/dev/null
 ruby extconf.rb
 make
 popd 1>/dev/null
