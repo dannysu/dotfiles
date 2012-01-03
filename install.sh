@@ -44,6 +44,9 @@ install_vim_plugin vim-fugitive git://github.com/tpope/vim-fugitive.git
 # install NERDtree plugin
 install_vim_plugin nerdtree git://github.com/scrooloose/nerdtree.git
 
+# install NERDCommenter plugin
+install_vim_plugin nerdcommenter git://github.com/scrooloose/nerdcommenter.git
+
 # install Gundo plugin
 install_vim_plugin gundo.vim git://github.com/sjl/gundo.vim.git
 
