@@ -41,3 +41,6 @@ map <Leader>gu :GundoToggle<cr>
 
 " Tagbar shortcuts
 map <Leader>rt :TagbarToggle<cr>
+
+" autocomplete
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
