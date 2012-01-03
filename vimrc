@@ -2,6 +2,9 @@ let mapleader="," " Use comma instead of \ for <Leader>
 
 let CommandTMaxCachedDirectories=0
 
+" allow NrrwRgn have multiple narrowed regions and still write back changes
+let g:nrrw_rgn_protect = 'n'
+
 call pathogen#infect()
 call pathogen#helptags()
 

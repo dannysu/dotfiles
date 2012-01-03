@@ -65,4 +65,7 @@ install_vim_plugin vim-easymotion git://github.com/Lokaltog/vim-easymotion.git
 # install SuperTab
 install_vim_plugin supertab git://github.com/ervandew/supertab.git
 
+# install NrrwRgn
+install_vim_plugin NrrwRgn git://github.com/chrisbra/NrrwRgn.git
+
 popd 1>/dev/null
