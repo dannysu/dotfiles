@@ -59,4 +59,10 @@ install_vim_plugin tagbar git://github.com/majutsushi/tagbar.git
 # install ZoomWin
 install_vim_plugin ZoomWin git://github.com/vim-scripts/ZoomWin.git
 
+# install EasyMotion
+install_vim_plugin vim-easymotion git://github.com/Lokaltog/vim-easymotion.git
+
+# install SuperTab
+install_vim_plugin supertab git://github.com/ervandew/supertab.git
+
 popd 1>/dev/null
