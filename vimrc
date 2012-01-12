@@ -47,3 +47,4 @@ map <Leader>rt :TagbarToggle<cr>
 
 " autocomplete
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType python set omnifunc=pythoncomplete#Complete

@@ -42,16 +42,16 @@ install_vim_plugin lusty git://github.com/sjbach/lusty.git
 install_vim_plugin vim-fugitive git://github.com/tpope/vim-fugitive.git
 
 # install NERDtree plugin
-install_vim_plugin nerdtree git://github.com/scrooloose/nerdtree.git
+#install_vim_plugin nerdtree git://github.com/scrooloose/nerdtree.git
 
 # install NERDCommenter plugin
 install_vim_plugin nerdcommenter git://github.com/scrooloose/nerdcommenter.git
 
 # install Gundo plugin
-install_vim_plugin gundo.vim git://github.com/sjl/gundo.vim.git
+#install_vim_plugin gundo.vim git://github.com/sjl/gundo.vim.git
 
 # install syntastic plugin
-install_vim_plugin syntastic git://github.com/scrooloose/syntastic.git
+#install_vim_plugin syntastic git://github.com/scrooloose/syntastic.git
 
 # install tagbar
 install_vim_plugin tagbar git://github.com/majutsushi/tagbar.git
@@ -70,5 +70,8 @@ install_vim_plugin NrrwRgn git://github.com/chrisbra/NrrwRgn.git
 
 # install xdebug plugin
 install_vim_plugin vim-xdebug git://github.com/ludovicPelle/vim-xdebug.git
+
+# install pydoc plugin
+install_vim_plugin pydoc.vim https://github.com/fs111/pydoc.vim.git
 
 popd 1>/dev/null
