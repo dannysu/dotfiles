@@ -1,3 +1,9 @@
+let s:uname = system("echo -n \"$(uname)\"")
+
+if !v:shell_error && s:uname == "Linux"
+	source $VIMRUNTIME/mswin.vim
+endif
+
 let mapleader="," " Use comma instead of \ for <Leader>
 
 let CommandTMaxCachedDirectories=0
@@ -47,4 +53,5 @@ map <Leader>rt :TagbarToggle<cr>
 
 " autocomplete
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-autocmd FileType python set omnifunc=pythoncomplete#Complete
+
+set listchars=tab:»·,trail:·
