@@ -11,6 +11,7 @@ ZSH_THEME="dannysu"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gvim="UBUNTU_MENUPROXY= gvim"
+alias ack="ack-grep"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
