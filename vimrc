@@ -55,3 +55,5 @@ map <Leader>rt :TagbarToggle<cr>
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
 set listchars=tab:»·,trail:·
+
+set go-=T " remove gvim toolbar
