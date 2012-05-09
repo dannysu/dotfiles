@@ -58,4 +58,4 @@ set listchars=tab:»·,trail:·
 
 set go-=T " remove gvim toolbar
 
-set gfn=Inconsolata\ Medium\ 12
+set gfn=Consolas\ 12
