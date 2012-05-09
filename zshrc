@@ -10,6 +10,7 @@ ZSH_THEME="dannysu"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias gvim="UBUNTU_MENUPROXY= gvim"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
