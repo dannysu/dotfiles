@@ -10,8 +10,10 @@ ZSH_THEME="dannysu"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gvim="UBUNTU_MENUPROXY= gvim"
 alias ack="ack-grep"
+alias vh="vagrant halt"
+alias vu="vagrant up"
+alias prj="cd ~/workspace/env/db && vagrant up && cd ~/workspace/env/chopmenu && vagrant up"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -36,6 +38,6 @@ plugins=(git osx history-substring-search compleat)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+export PATH=~/apps:~/apps/Sublime\ Text\ 2:/opt/vagrant/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 
 unsetopt correctall
