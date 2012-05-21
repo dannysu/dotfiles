@@ -1,3 +1,4 @@
+#!/bin/bash
 # Run from the same directory as the script
 
 ln -s $PWD/vimrc ~/.vimrc
@@ -15,7 +16,7 @@ wget -O vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/HEAD
 
 function install_vim_plugin {
     if [ ! -d "$1" ]; then
-        git clone "$2"
+        git clone "$2" "$1"
     fi
     pushd "$1" 1>/dev/null
     git pull
@@ -63,7 +64,7 @@ install_vim_plugin ZoomWin git://github.com/vim-scripts/ZoomWin.git
 install_vim_plugin vim-easymotion git://github.com/Lokaltog/vim-easymotion.git
 
 # install SuperTab
-install_vim_plugin supertab git://github.com/ervandew/supertab.git
+#install_vim_plugin supertab git://github.com/ervandew/supertab.git
 
 # install NrrwRgn
 install_vim_plugin NrrwRgn git://github.com/chrisbra/NrrwRgn.git
@@ -73,5 +74,11 @@ install_vim_plugin vim-xdebug git://github.com/ludovicPelle/vim-xdebug.git
 
 # install pydoc plugin
 install_vim_plugin pydoc.vim https://github.com/fs111/pydoc.vim.git
+
+# install align.vim
+install_vim_plugin vim-align https://github.com/jezcope/vim-align.git
+
+# install ScreenShell
+install_vim_plugin screenshell https://github.com/ervandew/screen.git
 
 popd 1>/dev/null
