@@ -59,3 +59,7 @@ set listchars=tab:»·,trail:·
 set go-=T " remove gvim toolbar
 
 set gfn=Consolas\ 12
+
+set expandtab
+set tabstop=4
+set shiftwidth=4
