@@ -63,3 +63,7 @@ set gfn=Consolas\ 12
 set expandtab
 set tabstop=4
 set shiftwidth=4
+
+autocmd BufEnter *.hs compiler ghc
+let g:haddock_browser = "/usr/bin/google-chrome"
+let g:ghc = "/usr/bin/ghc"

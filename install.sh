@@ -81,4 +81,7 @@ install_vim_plugin vim-align https://github.com/jezcope/vim-align.git
 # install ScreenShell
 install_vim_plugin screenshell https://github.com/ervandew/screen.git
 
+# install haskellmode-vim
+install_vim_plugin haskellmode-vim https://github.com/lukerandall/haskellmode-vim.git
+
 popd 1>/dev/null
