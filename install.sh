@@ -70,7 +70,7 @@ install_vim_plugin vim-easymotion git://github.com/Lokaltog/vim-easymotion.git
 install_vim_plugin NrrwRgn git://github.com/chrisbra/NrrwRgn.git
 
 # install xdebug plugin
-install_vim_plugin vim-xdebug git://github.com/ludovicPelle/vim-xdebug.git
+#install_vim_plugin vim-xdebug git://github.com/ludovicPelle/vim-xdebug.git
 
 # install pydoc plugin
 install_vim_plugin pydoc.vim https://github.com/fs111/pydoc.vim.git
@@ -86,5 +86,11 @@ install_vim_plugin haskellmode-vim https://github.com/lukerandall/haskellmode-vi
 
 # install VimClojure
 install_vim_plugin VimClojure https://github.com/vim-scripts/VimClojure.git
+
+# install vim-powerline
+install_vim_plugin vim-powerline git://github.com/Lokaltog/vim-powerline.git
+
+# install vim-conque
+install_vim_plugin vim-conque git://github.com/rson/vim-conque.git
 
 popd 1>/dev/null
