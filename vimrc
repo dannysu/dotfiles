@@ -67,3 +67,6 @@ set shiftwidth=4
 autocmd BufEnter *.hs compiler ghc
 let g:haddock_browser = "/usr/bin/google-chrome"
 let g:ghc = "/usr/bin/ghc"
+
+let g:vimclojure#HighlightBuiltins = 1
+let g:vimclojure#ParenRainbow = 1

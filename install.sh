@@ -84,4 +84,7 @@ install_vim_plugin screenshell https://github.com/ervandew/screen.git
 # install haskellmode-vim
 install_vim_plugin haskellmode-vim https://github.com/lukerandall/haskellmode-vim.git
 
+# install VimClojure
+install_vim_plugin VimClojure https://github.com/vim-scripts/VimClojure.git
+
 popd 1>/dev/null
