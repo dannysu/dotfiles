@@ -1,7 +1,7 @@
 let s:uname = system("echo -n \"$(uname)\"")
 
 if !v:shell_error && s:uname == "Linux"
-	source $VIMRUNTIME/mswin.vim
+"	source $VIMRUNTIME/mswin.vim
 endif
 
 let mapleader="," " Use comma instead of \ for <Leader>
@@ -14,7 +14,11 @@ let g:nrrw_rgn_protect = 'n'
 call pathogen#infect()
 call pathogen#helptags()
 
-colorscheme desert
+if has("gui_running")
+    colorscheme wombat
+else
+    colorscheme wombat256
+endif
 
 set hidden	" allow hidden buffers
 set ruler	" show the cursor position all the time
@@ -70,3 +74,5 @@ let g:ghc = "/usr/bin/ghc"
 
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#ParenRainbow = 1
+
+let g:slime_target = "tmux"

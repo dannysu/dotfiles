@@ -87,10 +87,10 @@ install_vim_plugin haskellmode-vim https://github.com/lukerandall/haskellmode-vi
 # install VimClojure
 install_vim_plugin VimClojure https://github.com/vim-scripts/VimClojure.git
 
+# install vim-slime
+install_vim_plugin vim-slime git://github.com/jpalardy/vim-slime.git
+
 # install vim-powerline
 install_vim_plugin vim-powerline git://github.com/Lokaltog/vim-powerline.git
-
-# install vim-conque
-install_vim_plugin vim-conque git://github.com/rson/vim-conque.git
 
 popd 1>/dev/null
