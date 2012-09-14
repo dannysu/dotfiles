@@ -72,6 +72,7 @@ autocmd BufEnter *.hs compiler ghc
 let g:haddock_browser = "/usr/bin/google-chrome"
 let g:ghc = "/usr/bin/ghc"
 
+autocmd BufEnter *.cljs set filetype=clojure
 let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#ParenRainbow = 1
 
