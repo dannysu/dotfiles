@@ -37,10 +37,16 @@ alias prj="cd ~/workspace/env/db && vagrant up && cd ~/workspace/env/chopmenu &&
 plugins=(git osx history-substring-search compleat)
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/apps/nvm/nvm.sh
 
 # Customize to your needs...
-export PATH=~/.cabal/bin/:~/apps:~/apps/Sublime\ Text\ 2:/opt/vagrant/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+export PATH=~/apps/android-sdk-linux/tools:~/.cabal/bin/:~/apps:~/apps/Sublime\ Text\ 2:/opt/vagrant/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 
 export TERM=screen-256color
 
 unsetopt correctall
+
+nvm use default > /dev/null
+
+# Ctrl-s was annoying
+stty -ixon
