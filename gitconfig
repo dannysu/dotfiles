@@ -1,0 +1,46 @@
+[user]
+	name  = Danny Su
+	email = contact@dannysu.com
+
+[core]
+    editor = /usr/bin/gvim -f
+    excludesfile = ~/.gitignore
+
+[color]
+    branch = auto
+    diff   = auto
+    status = auto
+
+[color "branch"]
+    current = yellow reverse
+    local   = yellow
+    remote  = green
+
+[color "diff"]
+    meta = yellow
+    frag = magenta
+    old  = red
+    new  = green
+
+[color "status"]
+    added     = green
+    changed   = blue
+    untracked = red
+
+[alias]
+    st = status
+    ci = commit
+    co = checkout
+    br = branch
+    ca = commit -av 
+    mg = merge --no-ff
+    lo = log --graph
+    undo = reset --hard
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    amend = commit --amend
+    subup = submodule update --init --recursive
+    dc = diff --cached
+
+[diff]
+    external = git-diff-wrapper.sh
+
