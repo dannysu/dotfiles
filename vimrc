@@ -55,8 +55,8 @@ map <Leader>gu :GundoToggle<cr>
 " Tagbar shortcuts
 map <Leader>rt :TagbarToggle<cr>
 
-" autocomplete
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+" Remap escape
+inoremap jk <ESC>
 
 set listchars=tab:»·,trail:·
 
@@ -77,3 +77,20 @@ let g:vimclojure#HighlightBuiltins = 1
 let g:vimclojure#ParenRainbow = 1
 
 let g:slime_target = "tmux"
+
+" Disable AutoComplPop.
+let g:acp_enableAtStartup = 0
+" Use neocomplcache.
+let g:neocomplcache_enable_at_startup = 1
+" Use smartcase.
+let g:neocomplcache_enable_smart_case = 1
+" Use camel case completion.
+let g:neocomplcache_enable_camel_case_completion = 1
+" Use underbar completion.
+let g:neocomplcache_enable_underbar_completion = 1
+" Set minimum syntax keyword length.
+let g:neocomplcache_min_syntax_length = 3
+let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+
+let g:notes_directory = '~/Dropbox/Notes'
+let g:notes_suffix = '.txt'

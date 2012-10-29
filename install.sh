@@ -93,4 +93,13 @@ install_vim_plugin vim-slime git://github.com/jpalardy/vim-slime.git
 # install vim-powerline
 install_vim_plugin vim-powerline git://github.com/Lokaltog/vim-powerline.git
 
+# install vim-notes
+install_vim_plugin vim-notes git://github.com/xolox/vim-notes.git
+
+# install vim-rooter
+install_vim_plugin vim-rooter git://github.com/airblade/vim-rooter.git
+
+# install neocomplcache
+install_vim_plugin neocomplcache git://github.com/Shougo/neocomplcache.git
+
 popd 1>/dev/null
