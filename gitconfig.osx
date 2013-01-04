@@ -3,7 +3,7 @@
 	email = contact@dannysu.com
 
 [core]
-    editor = /usr/local/bin/mvim
+    editor = /usr/local/bin/mvim -f
     excludesfile = ~/.gitignore
 
 [color]
