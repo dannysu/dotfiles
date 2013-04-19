@@ -31,10 +31,11 @@ alias prj="cd ~/workspace/env/db && vagrant up && cd ~/workspace/env/chopmenu &&
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 # COMPLETION_WAITING_DOTS="true"
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx history-substring-search compleat vi-mode)
+# Decide which plugins to load depending on OS
+osfile="$HOME/.dotfiles/zshrc.`uname`.sh"
+if [ -e $osfile ]; then
+    source $osfile
+fi
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/apps/nvm/nvm.sh
