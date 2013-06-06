@@ -92,5 +92,5 @@ let g:neocomplcache_enable_underbar_completion = 1
 let g:neocomplcache_min_syntax_length = 3
 let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 
-let g:notes_directory = '~/Dropbox/Notes'
+let g:notes_directories = ['~/Dropbox/Notes']
 let g:notes_suffix = '.txt'
