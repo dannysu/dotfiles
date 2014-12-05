@@ -2,3 +2,7 @@
 .swp
 *.pyc
 .DS_Store
+.SyncID
+.SyncIgnore
+.SyncArchive
+*.SyncTemp

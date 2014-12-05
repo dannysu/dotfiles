@@ -43,7 +43,20 @@
     assume  = update-index --assume-unchanged
     unassume = update-index --no-assume-unchanged
     assumed = "!git ls-files -v | grep ^h | cut -c 3-"
+    rpull = "!git submodule foreach 'git fetch origin --tags; git checkout master; git pull' && git pull && git submodule update --init --recursive"
+    feature = checkout --track -b
 
 [diff]
     external = git-diff-wrapper.sh
+    tool = diffmerge
+
+[difftool "diffmerge"]
+    cmd = diffmerge $LOCAL $REMOTE
+
+[merge]
+    tool = diffmerge
+
+[mergetool "diffmerge"]
+    cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
+    trustExitCode = true
 
